@@ -10,6 +10,10 @@ namespace PlaylistMaker
     {
         static void Main(string[] args)
         {
+            var mf = new MusicFile(Environment.CurrentDirectory);
+            var defaultPlaylistName = "myplaylist";
+
+            mf.MakePlayList(null, defaultPlaylistName);
         }
     }
 }
