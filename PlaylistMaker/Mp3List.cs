@@ -139,6 +139,7 @@ namespace PlaylistMaker
             var fname = $"{fileName}.{PlayListExt}";
             var list = PlayList(key);
             list = RandomSort(list);
+            Console.WriteLine($"Total music files: {list.Count}");
             try
             {
                 var s = "#EXTM3U\r\n";
